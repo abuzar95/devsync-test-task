@@ -6,6 +6,7 @@ This is a test project for full stack developers
 
 Design and implement a small, self‑contained enhancement to this app to demonstrate full‑stack skills, code quality, and UX judgment. Keep scope tight; prefer clear, well‑tested code over breadth.
 
+
 ## What you will build
 
 ### Update filter & search button
