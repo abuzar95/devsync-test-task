@@ -6,6 +6,18 @@ This is a test project for full stack developers
 
 Design and implement a small, self‑contained enhancement to this app to demonstrate full‑stack skills, code quality, and UX judgment. Keep scope tight; prefer clear, well‑tested code over breadth.
 
+## 🚀 Vercel Deployment
+
+This project is configured for easy deployment on Vercel. See [VERCEL_DEPLOYMENT.md](./VERCEL_DEPLOYMENT.md) for detailed deployment instructions.
+
+**Quick Deploy:**
+1. Push your code to GitHub/GitLab/Bitbucket
+2. Import project to Vercel
+3. Add environment variables (see `.vercel.example.env`)
+4. Deploy!
+
+**Note:** File uploads require cloud storage (S3, Cloudinary, etc.) as Vercel's file system is ephemeral.
+
 
 ## What you will build
 
