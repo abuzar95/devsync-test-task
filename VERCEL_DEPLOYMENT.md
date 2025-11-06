@@ -33,11 +33,29 @@ In the Vercel project settings, add these environment variables:
 **Required:**
 - `DATABASE` - Your MongoDB connection string (e.g., `mongodb+srv://username:password@cluster.mongodb.net/database?retryWrites=true&w=majority`)
 - `JWT_SECRET` - Secret key for JWT token generation
+- `REACT_APP_API_URL` - **API Base URL for React App** (see below)
 
 **Optional (if using Braintree):**
 - `BRAINTREE_MERCHANT_ID` - Braintree merchant ID
 - `BRAINTREE_PUBLIC_KEY` - Braintree public key
 - `BRAINTREE_PRIVATE_KEY` - Braintree private key
+- `AUTH_API_KEY` - Auth API key (if used)
+
+### Setting REACT_APP_API_URL
+
+Since your frontend and backend are on the same Vercel domain, you have two options:
+
+**Option 1: Use Relative URLs (Recommended)**
+- Set `REACT_APP_API_URL` to an **empty string** (leave it blank)
+- This uses relative URLs and works automatically with your Vercel domain
+- Example: `REACT_APP_API_URL=` (empty)
+
+**Option 2: Use Full URL**
+- Set `REACT_APP_API_URL` to your Vercel deployment URL
+- Example: `REACT_APP_API_URL=https://your-project.vercel.app`
+- Or use your custom domain: `REACT_APP_API_URL=https://yourdomain.com`
+
+**Note:** After your first deployment, Vercel will give you a URL like `https://your-project.vercel.app`. You can use this URL or leave it empty for relative URLs.
 
 **To add environment variables:**
 1. Go to your project settings in Vercel
